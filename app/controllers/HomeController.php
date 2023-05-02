@@ -1,10 +1,17 @@
 <?php
 
+class HomeController{
 
-namespace app\controllers;
+    public function __construct(){
 
+    }
+    public function index(){
+        echo "CHEGOU NO INDEX DE HOMECONTROLLER<br>";
+        require_once  "./views/home.php";
 
-class HomeController
-{
-
+    }
+    public function loadView($view){
+        echo "Entrou em loadView<br>";
+        return $view;
+    }
 }
